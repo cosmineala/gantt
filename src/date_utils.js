@@ -260,6 +260,10 @@ export default {
         }
         return 28;
     },
+
+    is_weekend(date) {
+        return date.getDay() !== 0 && date.getDay() !== 6
+    },
 };
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
